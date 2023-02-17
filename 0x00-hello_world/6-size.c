@@ -3,6 +3,7 @@
  * main - a program tha prints datatypes
  * Return 0 (Success)
  */
+
 int main(void)
 {
 	char a;
