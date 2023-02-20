@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 /**
  * main - Entry point
  * Description: 'print alphabets lowercase and uppercase'
@@ -12,10 +14,12 @@ int main(void)
 	while (n <= 122)
 	{
 		putchar(n);
+		n++;
 	}
 	while (m <= 90)
 	{
 		putchar(m);
+		m++;
 	}
 	putchar('\n');
 	return (0);
