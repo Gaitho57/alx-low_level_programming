@@ -6,8 +6,8 @@ char *allocate_buffer(char *file);
 void close_file_descriptor(int fd);
 
 /**
- * allocate_buffer - Allocates 1024 bytes for a buffer
- * @file: The name of the file buffer is storing chars for
+i * allocate_buffer - Allocates 1024 bytes for a buffer
+ * @file: Name of the file buffer is storing chars for
  *
  * Return: A pointer to the new buffer
  */
@@ -26,7 +26,7 @@ char *allocate_buffer(char *file)
 }
 /**
  * close_file_descriptor - Closes file descriptors
- * @fd: The file descriptor to be closed
+ * @fd: The file descriptor that is to be closed
  */
 void close_file_descriptor(int fd)
 {
@@ -41,16 +41,16 @@ void close_file_descriptor(int fd)
 	}
 }
 /**
- * main - copies the contents of a file to another file
- * @argc: the number of arguments supplied to the program
- * @argv: an array of pointers to the arguments
+ * main - duplicates contents of a file to another file
+ * @argc: number of arguments supplied to the program
+ * @argv: an array of pointers that points to the arguments
  *
  * Return: 0 on success
  *
- * Description: if the argument count is incorrect - exit xodw 97
- * if file_from does not exist or cannot be read - exit code 98
- * if file_to cannot be created or written to - exit code 99
- * if file_to or file_from cannot be closed - exit code 100
+ * Description: if the argument count is found incorrect - exit xodw 97
+ * if file_from does none existant or cannot be read - exit code 98
+ * if file_to can't be made or written to - exit code 99
+ * if file_to or file_from can't be closed - exit code 100
  */
 int main(int argc, char *argv[])
 {
