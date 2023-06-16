@@ -6,7 +6,7 @@ char *allocate_buffer(char *file);
 void close_file_descriptor(int fd);
 
 /**
-i * allocate_buffer - Allocates 1024 bytes for a buffer
+ * allocate_buffer - Allocates 1024 bytes for a buffer
  * @file: Name of the file buffer is storing chars for
  *
  * Return: A pointer to the new buffer
