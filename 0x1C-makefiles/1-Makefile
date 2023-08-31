@@ -1,17 +1,4 @@
-CC := gcc
-SRC := main.c file1.c file2.c
-OBJS := $(SRC:.c=.o)
-EXEC := school
-
-.PHONY: all clean
-
-all: $(EXEC)
-
-$(EXEC): $(OBJS)
-	$(CC) $(CFLAGS) $(OBJS) -o $@
-
-%.o: %.c
-	$(CC) $(CFLAGS) -c $< -o $@
-
-clean:
-	rm -f $(OBJS) $(EXEC)
+CC = gcc
+SRC = main.c school.c
+all: $(SRC)
+	$(CC) $(SRC) -o school
